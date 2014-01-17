@@ -21,6 +21,15 @@
 		00B5237318861CD200E106B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B5235518861CD200E106B7 /* UIKit.framework */; };
 		00B5237B18861CD200E106B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00B5237918861CD200E106B7 /* InfoPlist.strings */; };
 		00B5237D18861CD200E106B7 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B5237C18861CD200E106B7 /* ProjectTests.m */; };
+		00B523CC18876A4400E106B7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B523CB18876A4400E106B7 /* LoginViewController.m */; };
+		00B524D91887B61B00E106B7 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B524D81887B61B00E106B7 /* RegViewController.m */; };
+		00B524DC1887B82B00E106B7 /* RegListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B524DB1887B82B00E106B7 /* RegListViewController.m */; };
+		00B524DE1887BFAE00E106B7 /* 15coupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B524DD1887BFAE00E106B7 /* 15coupon.png */; };
+		00B524E01887BFDD00E106B7 /* barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B524DF1887BFDD00E106B7 /* barcode.png */; };
+		00B524E31887C0F600E106B7 /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B524E21887C0F600E106B7 /* CouponViewController.m */; };
+		00B524E61887CB3C00E106B7 /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B524E51887CB3C00E106B7 /* HomepageViewController.m */; };
+		00B525EE1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B525EB1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.m */; };
+		00B525EF1889154F00E106B7 /* CHTCollectionViewWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B525ED1889154F00E106B7 /* CHTCollectionViewWaterfallCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,22 @@
 		00B5237818861CD200E106B7 /* ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectTests-Info.plist"; sourceTree = "<group>"; };
 		00B5237A18861CD200E106B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00B5237C18861CD200E106B7 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
+		00B523CA18876A4400E106B7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		00B523CB18876A4400E106B7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		00B524D71887B61B00E106B7 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
+		00B524D81887B61B00E106B7 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		00B524DA1887B82B00E106B7 /* RegListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegListViewController.h; sourceTree = "<group>"; };
+		00B524DB1887B82B00E106B7 /* RegListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegListViewController.m; sourceTree = "<group>"; };
+		00B524DD1887BFAE00E106B7 /* 15coupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 15coupon.png; path = ../../../../../Downloads/15coupon.png; sourceTree = "<group>"; };
+		00B524DF1887BFDD00E106B7 /* barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barcode.png; path = ../../../../../Downloads/barcode.png; sourceTree = "<group>"; };
+		00B524E11887C0F600E106B7 /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		00B524E21887C0F600E106B7 /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
+		00B524E41887CB3C00E106B7 /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
+		00B524E51887CB3C00E106B7 /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
+		00B525EA1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		00B525EB1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		00B525EC1889154F00E106B7 /* CHTCollectionViewWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallCell.h; sourceTree = "<group>"; };
+		00B525ED1889154F00E106B7 /* CHTCollectionViewWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +107,7 @@
 		00B5234518861CD200E106B7 = {
 			isa = PBXGroup;
 			children = (
-				00B5235718861CD200E106B7 /* Project */,
+				00B525E81889151900E106B7 /* New Group */,
 				00B5237618861CD200E106B7 /* ProjectTests */,
 				00B5235018861CD200E106B7 /* Frameworks */,
 				00B5234F18861CD200E106B7 /* Products */,
@@ -112,6 +137,8 @@
 		00B5235718861CD200E106B7 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				00B524DF1887BFDD00E106B7 /* barcode.png */,
+				00B525E91889152F00E106B7 /* RegView_sub */,
 				00B5236018861CD200E106B7 /* AppDelegate.h */,
 				00B5236118861CD200E106B7 /* AppDelegate.m */,
 				00B5236318861CD200E106B7 /* Main.storyboard */,
@@ -119,6 +146,16 @@
 				00B5236718861CD200E106B7 /* ViewController.m */,
 				00B5236918861CD200E106B7 /* Images.xcassets */,
 				00B5235818861CD200E106B7 /* Supporting Files */,
+				00B523CA18876A4400E106B7 /* LoginViewController.h */,
+				00B523CB18876A4400E106B7 /* LoginViewController.m */,
+				00B524D71887B61B00E106B7 /* RegViewController.h */,
+				00B524D81887B61B00E106B7 /* RegViewController.m */,
+				00B524DA1887B82B00E106B7 /* RegListViewController.h */,
+				00B524DB1887B82B00E106B7 /* RegListViewController.m */,
+				00B524E11887C0F600E106B7 /* CouponViewController.h */,
+				00B524E21887C0F600E106B7 /* CouponViewController.m */,
+				00B524E41887CB3C00E106B7 /* HomepageViewController.h */,
+				00B524E51887CB3C00E106B7 /* HomepageViewController.m */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -150,6 +187,26 @@
 				00B5237918861CD200E106B7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00B525E81889151900E106B7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				00B5235718861CD200E106B7 /* Project */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		00B525E91889152F00E106B7 /* RegView_sub */ = {
+			isa = PBXGroup;
+			children = (
+				00B525EA1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.h */,
+				00B525EB1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.m */,
+				00B525EC1889154F00E106B7 /* CHTCollectionViewWaterfallCell.h */,
+				00B525ED1889154F00E106B7 /* CHTCollectionViewWaterfallCell.m */,
+				00B524DD1887BFAE00E106B7 /* 15coupon.png */,
+			);
+			name = RegView_sub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B5236A18861CD200E106B7 /* Images.xcassets in Resources */,
+				00B524DE1887BFAE00E106B7 /* 15coupon.png in Resources */,
+				00B524E01887BFDD00E106B7 /* barcode.png in Resources */,
 				00B5235C18861CD200E106B7 /* InfoPlist.strings in Resources */,
 				00B5236518861CD200E106B7 /* Main.storyboard in Resources */,
 			);
@@ -249,8 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B524E61887CB3C00E106B7 /* HomepageViewController.m in Sources */,
+				00B525EE1889154F00E106B7 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				00B523CC18876A4400E106B7 /* LoginViewController.m in Sources */,
 				00B5236818861CD200E106B7 /* ViewController.m in Sources */,
 				00B5236218861CD200E106B7 /* AppDelegate.m in Sources */,
+				00B524DC1887B82B00E106B7 /* RegListViewController.m in Sources */,
+				00B525EF1889154F00E106B7 /* CHTCollectionViewWaterfallCell.m in Sources */,
+				00B524D91887B61B00E106B7 /* RegViewController.m in Sources */,
+				00B524E31887C0F600E106B7 /* CouponViewController.m in Sources */,
 				00B5235E18861CD200E106B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +526,7 @@
 				00B5238218861CD200E106B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00B5238318861CD200E106B7 /* Build configuration list for PBXNativeTarget "ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +535,7 @@
 				00B5238518861CD200E106B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
