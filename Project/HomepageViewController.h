@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingViewViewController.h"
 
 @interface HomepageViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end

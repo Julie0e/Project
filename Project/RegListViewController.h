@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegListViewController : UIViewController
+@interface RegListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

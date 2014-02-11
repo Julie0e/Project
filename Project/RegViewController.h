@@ -10,7 +10,7 @@
 #import "CHTCollectionViewWaterfallLayout.h"
 
 @interface RegViewController : UIViewController<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
-@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
+
 @property (nonatomic) CGFloat cellWidth;
 
 
