@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RegListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end

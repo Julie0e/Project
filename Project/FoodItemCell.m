@@ -16,7 +16,7 @@
 {
     [self.delegate deleteFood:self];
     
-    NSLog(@"dddddddddddd");
+  //  NSLog(@"dddddddddddd");
 }
 
 

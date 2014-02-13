@@ -13,8 +13,11 @@
 
 @property (strong, nonatomic)NSString *name;
 @property (strong, nonatomic)NSString *image;
-@property (strong, nonatomic)NSDate *date;
+//@property (nonatomic) int startDate;
+@property (strong, nonatomic)NSDate *startDate;
 @property (strong, nonatomic)NSDate *endDate;
+@property (nonatomic) int lifeTime;
+@property (nonatomic) int position;
 @property (nonatomic) int rowid;
 //+(id)product:(NSString *)name date:(NSString *)date;
 

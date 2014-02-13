@@ -14,7 +14,8 @@
    <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
-@property (weak, nonatomic) IBOutlet UILabel *name;
+
+
 
 
 @end

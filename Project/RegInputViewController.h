@@ -17,6 +17,7 @@
     NSArray *small;
     NSString *item;
     NSString *item2;
+    
 }
 @property (retain, nonatomic) NSDictionary *bigSmallaa;
 @property (retain, nonatomic) NSArray *bigaa;

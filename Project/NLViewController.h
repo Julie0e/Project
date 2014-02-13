@@ -26,7 +26,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BarcodeViewController.h"
+//#import "BarcodeViewController.h"
 #import "RegInputViewController.h"
 #import "Food.h"
 

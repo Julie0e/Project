@@ -21,13 +21,14 @@
     float height;
 }
 
-@property (weak, nonatomic) IBOutlet UIImageView *image;
-@property (weak, nonatomic) IBOutlet UIButton *big;
-@property (weak, nonatomic) IBOutlet UIButton *small;
-@property (weak, nonatomic) IBOutlet UIButton *date;
-@property (weak, nonatomic) IBOutlet UIButton *num;
-@property (weak, nonatomic) IBOutlet UISwitch *alarm;
-@property (weak, nonatomic) IBOutlet UISwitch *refrigerator;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UIButton *big;
+@property (strong, nonatomic) IBOutlet UIButton *small;
+@property (strong, nonatomic) IBOutlet UIButton *date;
+@property (strong, nonatomic) IBOutlet UIButton *num;
+@property (strong, nonatomic) IBOutlet UISwitch *alarm;
+@property (strong, nonatomic) IBOutlet UISwitch *refrigerator;
+@property (nonatomic) int lifeTime;
 
 @end
 
@@ -49,7 +50,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+      
     }
     return self;
 }
@@ -71,15 +72,16 @@
 {
     UISwitch *ref = (UISwitch *)sender;
     if (ref.on) {
-        on = 0;
+        on = 1;
         NSLog(@"냉장설정함 %d",on);
     }
     else if(!ref.on)
     {
-        on = 1;
+        on = 0;
         NSLog(@"냉동설정함 %d", on);
     }
 }
+
 
 - (IBAction)chooseBig:(id)sender
 {
@@ -122,10 +124,10 @@
 
 - (IBAction)save:(UIButton *)button
 {
-    [_food addFoodWithName:self.small.currentTitle date:self.date.currentTitle];
+    [_food addFoodWithName:self.small.currentTitle endDate:self.date.currentTitle position:self.refrigerator.on lifeTime:self.lifeTime];
     [button resignFirstResponder];
-    NSLog(@"%@",self.small.currentTitle);
-    NSLog(@"%@",self.date.currentTitle);
+//    NSLog(@"%@",self.small.currentTitle);
+//    NSLog(@"%@",self.date.currentTitle);
 }
 
 - (IBAction)chooseDate:(id)sender
@@ -208,8 +210,10 @@
     [super viewDidLoad];
     
     NSBundle *bundle = [NSBundle mainBundle];
+    
     NSString *plistPath = [bundle pathForResource:@"menu" ofType:@"plist"];
     NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    
     self.bigSmallaa = dictionary;
 
     NSArray *components = [self.bigSmallaa allKeys];
@@ -228,7 +232,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [_food resolveData];
+//    [_food resolveData];
 }
 
 
@@ -251,9 +255,8 @@
     if (self.date) {
         [sheet2 dismissWithClickedButtonIndex:0 animated:YES];
         if (formatter == nil) {
-            formatter = [[NSDateFormatter alloc] init];
-            [formatter setDateFormat:@"yyyy 년 MM월 dd일"];
-            [formatter setLocale:[NSLocale currentLocale]];
+            formatter = _food.dateFormatter;
+
         }
         
         NSDate *date = picker.date;

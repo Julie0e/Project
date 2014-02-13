@@ -9,12 +9,6 @@
 #import "FoodItem.h"
 
 @implementation FoodItem
-//+(id)product:(NSString *)name date:(NSString *)date
-//{
-//    FoodItem *item = [[FoodItem alloc]init];
-//    item.name = name;
-//    
-//    return item;
-//}
+
 
 @end

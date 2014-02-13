@@ -8,10 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "LeftViewController.h"
+//#import "LeftViewController.h"
 #import "RegListViewController.h"
 #import "RegListCellViewController.h"
-
+#import "Food.h"
 
 @interface AppDelegate()
 
@@ -21,11 +21,10 @@
 @implementation AppDelegate
 
 
-
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    Food *food = [Food sharedFood];
+    [food clouluData];
     // Override point for customization after application launch.
     return YES;
 }
